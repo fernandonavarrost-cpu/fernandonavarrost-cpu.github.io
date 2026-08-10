@@ -1,2 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+:root{
+    --branco:#fff;
+    --preto: #000;
+    --bg-color1:#323B45;
+    --bg-color2:#101623;
+}
+
+body{
+    display:flex;
+    flex-direction: space-around;
+    margin:0;
+    padding:0;
+    background-color: linear-gradient(
+        180deg, 
+        var(--bg-color1) 0%, 
+        var(--bg-color2) 100%);
+    width: 100vw;
+    height: 100vh;  
+}
