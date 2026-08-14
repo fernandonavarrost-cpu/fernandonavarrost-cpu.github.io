@@ -9,6 +9,8 @@
     --header-color1:#2C2E45;
     --header-color2:#545D70;
     --link-hover-color:#FFAE00;
+    --banner-shadow-color1:#000000;
+    --banner-shadow-color2:#00000000;
 }
 
 body{
@@ -78,3 +80,24 @@ a:hover {
     color: var(--link-hover-color);
 }
 
+#banner{
+    height: 600px;
+    background-image: url('../images/banner2.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner-shadow{
+    height: 100%;
+    background: linear-gradient(0deg, var(--banner-shadow-color1) 0%,  var(--banner-shadow-color2) 50%, var(--banner-shadow-color2) 100%);
+    position: relative;
+}
+
+#banner h1{
+    position: relative;
+    font-size: 65px;
+    top: -180px;
+    left: 50px;
+    text-transform: uppercase;
+}
