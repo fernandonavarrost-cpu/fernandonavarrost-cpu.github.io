@@ -82,7 +82,7 @@ a:hover {
 
 #banner{
     height: 600px;
-    background-image: url('../images/banner2.png');
+    background-image: url('public/images/banner2.png');
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
