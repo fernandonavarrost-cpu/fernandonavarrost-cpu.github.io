@@ -1,5 +1,6 @@
 <div align="center">
   <img src="./public/images/logo-refatorando.png" alt="Logo Refatorando" width="100">
+  <img src="./public/images/banner2.png" alt="Banner do portfólio" width="100%">
   <h1>Portfólio — Fernando Navarro</h1>
   <p>Desenvolvedor front-end em busca da primeira oportunidade como dev júnior</p>
 
