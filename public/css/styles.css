@@ -14,6 +14,8 @@
     --box-bg-color:#2B2C44;
     --btn-color1:#449225;
     --btn-color2:#c1ffa8;
+    --bar-color1:#ffae00;
+    --bar-color2:#787f9a;
 
 }
 
@@ -213,4 +215,48 @@ h3{
     border: none;
     font-size: 16px;
     font-weight: bold;
+}
+
+#habilidades > h3{
+    padding-left: 20px;
+}
+
+#habilidades .tecnologia{
+background-color: var(--box-bg-color);
+border-radius:10px;
+display: flex;
+justify-content: stretch;
+align-items: center;
+padding: 20px;
+margin: 20px 0;
+gap: 20px;
+}
+
+.tecnologia img{
+width: 50px;
+height: 50px;
+}
+
+.tecnologia > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tecnologia > div > span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bar{
+    height: 20px;
+    background-color: var(--bar-color2);
+    border-radius: 10px;
+}
+
+.bar div{
+    height: 20px;
+    background-color: var(--bar-color1);
+    border-radius: 10px;
 }
