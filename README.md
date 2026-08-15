@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="./public/images/logo-refatorando.png" alt="Logo Refatorando" width="100">
   <img src="./public/images/banner3.png" alt="Banner do portfólio" width="100%">
   <h1>Portfólio — Fernando Navarro</h1>
   <p>Desenvolvedor fullstack em busca da primeira oportunidade como dev júnior</p>
@@ -82,3 +81,7 @@ projeto-portifolio/
 ## Licença
 
 Distribuído sob a licença [GNU GPL v3.0](./LICENSE).
+
+## Créditos
+
+Este portfólio é baseado no repositório original [incubadora-refatorando/projeto-portifolio](https://github.com/incubadora-refatorando/projeto-portifolio), sob licença [GPL-3.0](https://github.com/incubadora-refatorando/projeto-portifolio?tab=GPL-3.0-1-ov-file), e foi modificado por Fernando Navarro em 2026.
