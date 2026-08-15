@@ -2,7 +2,7 @@
   <img src="./public/images/logo-refatorando.png" alt="Logo Refatorando" width="100">
   <img src="./public/images/banner3.png" alt="Banner do portfólio" width="100%">
   <h1>Portfólio — Fernando Navarro</h1>
-  <p>Desenvolvedor front-end em busca da primeira oportunidade como dev júnior</p>
+  <p>Desenvolvedor fullstack em busca da primeira oportunidade como dev júnior</p>
 
   [![Licença](https://img.shields.io/badge/Licença-GPL--3.0-blue.svg)](./LICENSE)
   [![Site](https://img.shields.io/badge/Website-fernandonavarrost--cpu.github.io-ffae00)](https://fernandonavarrost-cpu.github.io/)
@@ -12,9 +12,9 @@
 
 ## Sobre
 
-Este é o meu portfólio pessoal, onde apresento um pouco sobre mim, minhas habilidades e os projetos que desenvolvi. Sou dev front-end e HTML e CSS são minha zona de conforto — é onde eu me sinto mais seguro para caprichar nos detalhes.
+Este é o meu portfólio pessoal, onde apresento um pouco sobre mim, minhas habilidades e os projetos que desenvolvi. Sou dev fullstack, com expertise em front-end, e HTML e CSS são minha zona de conforto — é onde eu me sinto mais seguro para caprichar nos detalhes.
 
-Atualmente estou me aprofundando em **JavaScript, TypeScript, Node e Tailwind** para ampliar meu leque de ferramentas, e uso **Git e GitHub** no dia a dia, seguindo boas práticas de versionamento e organização de código.
+Atualmente estou me aprofundando em **JavaScript, TypeScript, Node e Tailwind** para expandir meu conhecimento ao **back-end** e atuar em projetos fullstack, e uso **Git e GitHub** no dia a dia, seguindo boas práticas de versionamento e organização de código.
 
 ## Acesse
 
@@ -22,7 +22,7 @@ Atualmente estou me aprofundando em **JavaScript, TypeScript, Node e Tailwind** 
 
 ## Tecnologias
 
-| Domínio | Em estudo |
+| Domínio | Em estudo (back-end / ampliação) |
 | --- | --- |
 | HTML5 | JavaScript |
 | CSS3 | TypeScript |
