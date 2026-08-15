@@ -76,12 +76,14 @@ nav{
     gap: 10px;
 }
 
-nav > img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px 3vw;
-    align-self: flex-start;
+#menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: var(--branco);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px 15px;
 }
 
 nav > ul{
@@ -276,3 +278,150 @@ div.title{
 
 /*Seção Projetos*/
 
+#galeria_projetos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#galeria_projetos a{
+    width: 45%;
+}
+
+#galeria_projetos > a > img{
+    max-width: 100%;
+    margin: 10px;
+}
+
+/*Seção contato*/
+
+#contato{
+    display: flex;
+    flex-direction: column;
+}
+
+#container_formulario{
+    margin: 20px;
+    padding: 20px;
+    max-width: 800px;
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+    align-self: center;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input, textarea{
+    font-family: inherit;
+    font-size: 16px;
+    flex-basis: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+form div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+textarea{
+    height: 200px;
+}
+
+form button{
+    background-color: var(--btn-color1);
+    color: var(--branco);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover{
+    background-color: var(--btn-color2);
+    color: var(--btn-color1);
+    font-size: 16px;
+}
+
+h4{
+    font-size: 16px;
+    margin: 5px 10px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px){
+    #container{
+        margin: 20px;
+    }
+    #banner{
+        height: 400px;
+    }
+    #banner h1{
+        font-size: 55px;
+    }
+    #habilidades{
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 768px){
+    #container{
+        margin: 0;
+    }
+    nav{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    #menu-toggle{
+        display: block;
+        align-self: flex-end;
+    }
+    #menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0 0 15px 0;
+    }
+    #menu.aberto{
+        display: flex;
+    }
+    #banner{
+        height: 300px;
+    }
+    #banner h1{
+        font-size: 40px;
+        right: 20px;
+        bottom: 60px;
+    }
+    #info{
+        flex-direction: column;
+    }
+    #habilidades{
+        margin-top: 0;
+        margin-right: 0;
+        padding: 20px;
+    }
+    #sobre p{
+        font-size: 18px;
+        margin: 20px;
+    }
+    #galeria_projetos a{
+        width: 100%;
+    }
+}

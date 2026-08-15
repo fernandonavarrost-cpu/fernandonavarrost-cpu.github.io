@@ -6,20 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfólio | Fernando Navarro</title>
         <meta name="description" content="Portfólio de Fernando Navarro, desenvolvedor web fullstack, focado em criar interfaces funcionais e agradáveis de usar.">
-        <link rel="icon" href="./public/images/logo-refatorando.png" type="image/x-icon">
         <link rel="stylesheet" href="./public/css/styles.css">
     </head>
 
     <body>
         <div id="container">
             <header id="header">
-                <nav>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">HABILIDADES</a></li>
-                        <li><a href="#">SOBRE</a></li>
-                        <li><a href="#">PROJETOS</a></li>
-                        <li><a href="#">CONTATO</a></li>
+                <nav id="nav">
+                    <button id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+                    <ul id="menu">
+                        <li><a href="#banner">HOME</a></li>
+                        <li><a href="#habilidades">HABILIDADES</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#projetos">PROJETOS</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
                     </ul>
                 </nav>
             </header>
@@ -113,12 +113,32 @@
                     <p class="nota">* Barras em constante atualização conforme minha evolução nos estudos.<br>Última atualização: 15/08/2026</p>
                 </div>
             </div>
-            <div id="Projetos">
-                <div class="title">
-                    Projetos
+            <div id="projetos">
+                <div class="title">Projetos</div>
+                <div id="galeria_projetos">
+                    <a href="https://github.com/fernandonavarrost-cpu/projeto-todo-list" target="_blank"><img src="./public/images/projetos-todo-List.png" alt="projeto To-do-List"/></a>
+                    <a href="https://github.com/fernandonavarrost-cpu/projeto_login" target="_blank"><img src="./public/images/projetos-login.png" alt="projeto página de login"/></a>
+                    <a href="https://github.com/fernandonavarrost-cpu/landing-page-noruega" target="_blank"><img src="./public/images/projetos-landingpage.png" alt="projeto landing page de uma agencia de viagens"/></a>
+                    <a href="https://github.com/fernandonavarrost-cpu/pagina_de_ecommerce" target="_blank"><img src="./public/images/projetos-ecommerce.png" alt="projeto e-commerce"/></a>
+                </div>
+            </div>
+            <div id="contato">
+                <div class="title">Contato</div>
+                    <div id="container_formulario">
+                        <h4>Enviar mensagem:</h4>
+                        <form action="https://formspree.io/f/xjyboqlq" method="POST">
+                            <input type='email' placeholder="Digite aqui seu e-mail" name="email">
+                            <input type='text' placeholder="Digite aqui seu nome" name="nome">
+                            <textarea name='message' placeholder="Escreva aqui sua mensagem..."></textarea>
+                            <div>
+                                <button type="submit">Enviar mensagem</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="./public/js/script.js"></script>
     </body>
 
 </html>
