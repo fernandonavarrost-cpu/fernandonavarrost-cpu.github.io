@@ -380,9 +380,73 @@ form button:hover{
     font-size: 16px;
 }
 
+form button:disabled{
+    background-color: var(--bar-color2);
+    color: var(--branco);
+    cursor: not-allowed;
+    font-size: 15px;
+}
+
+.g-recaptcha{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-basis: 100%;
+}
+
+#form-error{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: var(--link-hover-color);
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 174, 0, 0.1);
+    border-radius: 10px;
+}
+
 h4{
     font-size: 16px;
     margin: 5px 10px;
+}
+
+/* Página Obrigado */
+
+#obrigado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: calc(100vh - 100px);
+    padding: 40px;
+}
+
+#obrigado h1{
+    font-size: 60px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+#obrigado p{
+    max-width: 600px;
+}
+
+#obrigado a{
+    text-transform: uppercase;
+    background-color: var(--btn-color1);
+    color: var(--branco);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#obrigado a:hover{
+    background-color: var(--btn-color2);
+    color: var(--btn-color1);
+    font-size: 16px;
 }
 
 /* Tema claro */

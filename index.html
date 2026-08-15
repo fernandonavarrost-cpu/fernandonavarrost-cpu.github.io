@@ -7,6 +7,7 @@
         <title>Portfólio | Fernando Navarro</title>
         <meta name="description" content="Portfólio de Fernando Navarro, desenvolvedor web fullstack, focado em criar interfaces funcionais e agradáveis de usar.">
         <link rel="stylesheet" href="./public/css/styles.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
 
     <body>
@@ -129,10 +130,12 @@
                 <div class="title">Contato</div>
                     <div id="container_formulario">
                         <h4>Enviar mensagem:</h4>
-                        <form action="https://formspree.io/f/xjyboqlq" method="POST">
+                        <form id="contato-form" action="https://formspree.io/f/xjyboqlq" method="POST">
                             <input type='email' placeholder="Digite aqui seu e-mail" name="email">
                             <input type='text' placeholder="Digite aqui seu nome" name="nome">
                             <textarea name='message' placeholder="Escreva aqui sua mensagem..."></textarea>
+                            <div class="g-recaptcha" data-sitekey="6Lc5_IctAAAAAPEQFtMFHFCp17oWCsxFytglqpsC"></div>
+                            <p id="form-error" hidden></p>
                             <div>
                                 <button type="submit">Enviar mensagem</button>
                             </div>
