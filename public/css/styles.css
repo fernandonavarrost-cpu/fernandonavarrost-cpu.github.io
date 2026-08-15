@@ -20,8 +20,6 @@ body{
     padding:0;
     background-color: var(--bg-color1);
     background: linear-gradient(180deg, var(--bg-color1) 0%,  var(--bg-color2) 100%);
-    width: 100vw;
-    height: 100vh;  
     color: var(--branco);
     font-family: "Roboto", sans-serif;
     letter-spacing: 2px;
@@ -101,3 +99,59 @@ a:hover {
     left: 50px;
     text-transform: uppercase;
 }
+
+#info{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sobre{
+    flex: 1;
+    
+
+}
+
+#habilidades{
+    flex: 1;
+    
+}
+
+#social {
+    display: flex;
+}
+
+#social img {
+    width: 50px;
+   padding: 10px;
+   transition: width 100ms ease-in-out;
+}
+
+#social img:hover {
+    width: 55px;
+  
+}
+
+#social span {
+    padding: 10px;
+    font-size: 18px;
+    background: linear-gradient(90deg, var(--header-color1) 0%,  var(--banner-shadow-color2) 100%);
+    margin: 10px;
+    
+}
+
+div.title{
+    background: linear-gradient(90deg, var(--banner-shadow-color1) 0%,  var(--banner-shadow-color2) 50%);
+    font-size: 36px;
+    padding: 10px 30px;
+    margin: 0 0 20px 0;
+}
+
+#sobre p{
+    margin: 30px;
+}
+
+p{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
