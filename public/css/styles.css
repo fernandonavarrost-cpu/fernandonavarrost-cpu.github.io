@@ -66,6 +66,7 @@ h3{
 /* Header e Navegação */
 header{
     background: linear-gradient(90deg, var(--header-color1) 0%,  var(--header-color2) 100%);
+    position: relative;
 }
 
 nav{
@@ -84,6 +85,29 @@ nav{
     font-size: 28px;
     cursor: pointer;
     padding: 10px 15px;
+}
+
+#theme-toggle{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+#theme-toggle:hover{
+    transform: translateY(-50%) scale(1.15);
+}
+
+#theme-toggle img{
+    width: 24px;
+    height: 24px;
+    display: block;
 }
 
 nav > ul{
@@ -361,6 +385,53 @@ h4{
     margin: 5px 10px;
 }
 
+/* Tema claro */
+
+body.light{
+    --branco:#1F2937;
+    --preto: rgba(0,0,0,0.25);
+    --bg-color1:#E8ECF2;
+    --bg-color2:#C7D0DD;
+    --container-bg-color:#FFFFFF;
+    --header-color1:#FFFFFF;
+    --header-color2:#D8E0EA;
+    --link-hover-color:#D6930B;
+    --box-bg-color:#F1F4F9;
+    --bar-color2:#E0E6EE;
+}
+
+body.light #banner h1{
+    color: #FFFFFF;
+}
+
+body.light #banner-shadow{
+    background: linear-gradient(0deg, #FFFFFF 0%, var(--banner-shadow-color2) 50%, var(--banner-shadow-color2) 100%);
+}
+
+body.light #social{
+    background: linear-gradient(90deg, #E8ECF2 0%, var(--banner-shadow-color2) 50%, var(--banner-shadow-color2) 100%);
+}
+
+body.light div.title{
+    background: linear-gradient(90deg, #E3E9F1 0%, var(--banner-shadow-color2) 50%);
+}
+
+body.light input,
+body.light textarea{
+    background-color: #FFFFFF;
+    border: 1px solid #D5DBE4;
+}
+
+body.light .nota{
+    color: #64748B;
+}
+
+body.light .tecnologia,
+body.light #resumo,
+body.light #container_formulario{
+    border: 1px solid #E2E8F0;
+}
+
 /* Responsividade */
 
 @media (max-width: 1024px){
@@ -391,6 +462,14 @@ h4{
         display: block;
         align-self: flex-end;
     }
+    #theme-toggle{
+        top: 10px;
+        right: 60px;
+        transform: none;
+    }
+    #theme-toggle:hover{
+        transform: scale(1.15);
+    }
     #menu{
         display: none;
         flex-direction: column;
@@ -405,9 +484,16 @@ h4{
         height: 300px;
     }
     #banner h1{
-        font-size: 40px;
-        right: 20px;
-        bottom: 60px;
+        font-size: clamp(24px, 8vw, 32px);
+        left: 0;
+        right: 0;
+        text-align: center;
+        white-space: nowrap;
+        bottom: 10px;
+        margin: 0;
+    }
+    #banner h1 br{
+        display: none;
     }
     #info{
         flex-direction: column;
