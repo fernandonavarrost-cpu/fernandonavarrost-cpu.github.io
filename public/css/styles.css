@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* Variáveis */
 :root{
     --branco:#fff;
     --preto: #000;
@@ -19,60 +20,18 @@
 
 }
 
+/* Reset e Base */
 body{
-    display:flex;
-    flex-direction: space-around;
-    margin:0;
-    padding:0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
     background-color: var(--bg-color1);
     background: linear-gradient(180deg, var(--bg-color1) 0%,  var(--bg-color2) 100%);
     color: var(--branco);
     font-family: "Roboto", sans-serif;
     letter-spacing: 2px;
     overflow-x: hidden;
-}
-
-#container{
-    background-color: var(--container-bg-color);
-    max-width: 1280px;
-    margin:50px;
-    min-height: calc(100vh - 100);
-    flex-grow: 1;
-    box-shadow: -10px 10px 40px var(--preto);
-}
-
-header{
-    background: linear-gradient(90deg, var(--header-color1) 0%,  var(--header-color2) 100%);
-
-}
-
-nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-nav >img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px 3vw;;
-    align-self: flex-start;
-}
-
-nav > ul{
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    gap: 7vw;
-}
-
-nav > ul > li{
-    list-style: none;
-    text-decoration: none;
-    display:inline;
 }
 
 a{
@@ -84,6 +43,61 @@ a:hover {
     color: var(--link-hover-color);
 }
 
+p{
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Container */
+#container{
+    background-color: var(--container-bg-color);
+    max-width: 1280px;
+    margin: 50px;
+    min-height: calc(100vh - 100px);
+    flex-grow: 1;
+    box-shadow: -10px 10px 40px var(--preto);
+}
+
+/* Header e Navegação */
+header{
+    background: linear-gradient(90deg, var(--header-color1) 0%,  var(--header-color2) 100%);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 3vw;
+    align-self: flex-start;
+}
+
+nav > ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+}
+
+nav > ul > li{
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+}
+
+/* Banner */
 #banner{
     height: 600px;
     background-image: url('../images/banner2.png');
@@ -112,22 +126,20 @@ a:hover {
     text-align: right;
 }
 
+/* Layout da área de informações */
 #info{
     display: flex;
     justify-content: space-between;
 }
 
+/* Seção Sobre */
 #sobre{
     flex: 1;
-    
-
 }
 
-#habilidades{
-    flex: 1;
-    margin-right: 30px;
-    margin-top:-180px;
-    z-index: 100;
+#sobre p{
+    margin: 30px;
+    text-align: justify;
 }
 
 #social {
@@ -137,15 +149,13 @@ a:hover {
 
 #social img {
     width: 30px;
-   padding: 10px;
-   margin: 20px 5px 20px 10px;
-   transition: width 100ms ease-in-out;
-   
+    padding: 10px;
+    margin: 20px 5px 20px 10px;
+    transition: width 100ms ease-in-out;
 }
 
 #social img:hover {
     width: 35px;
-  
 }
 
 #social span {
@@ -155,6 +165,7 @@ a:hover {
     align-content: center;
 }
 
+/* Componentes gerais */
 div.title{
     background: linear-gradient(90deg, var(--banner-shadow-color1) 0%,  var(--banner-shadow-color2) 50%);
     font-size: 30px;
@@ -162,14 +173,16 @@ div.title{
     margin: 0 0 20px 0;
 }
 
-#sobre p{
-    margin: 30px;
-    text-align: justify;
+/* Seção Habilidades */
+#habilidades{
+    flex: 1;
+    margin-right: 30px;
+    margin-top: -180px;
+    z-index: 100;
 }
 
-p{
-    font-size: 25px;
-    font-weight: lighter;
+#habilidades > h3{
+    padding-left: 20px;
 }
 
 #resumo{
@@ -177,11 +190,6 @@ p{
     border-radius: 10px;
     background-color: var(--box-bg-color);
     text-align: center;
-}
-
-h3{
-    font-size: 30px;
-    font-weight: 600;
 }
 
 #resumo h3{
@@ -217,24 +225,20 @@ h3{
     font-weight: bold;
 }
 
-#habilidades > h3{
-    padding-left: 20px;
-}
-
 #habilidades .tecnologia{
-background-color: var(--box-bg-color);
-border-radius:10px;
-display: flex;
-justify-content: stretch;
-align-items: center;
-padding: 20px;
-margin: 20px 0;
-gap: 20px;
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    gap: 20px;
 }
 
 .tecnologia img{
-width: 50px;
-height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 .tecnologia > div{
@@ -260,3 +264,15 @@ height: 50px;
     background-color: var(--bar-color1);
     border-radius: 10px;
 }
+
+.nota{
+    font-size: 14px;
+    font-style: italic;
+    color: var(--bar-color2);
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/*Seção Projetos*/
+
